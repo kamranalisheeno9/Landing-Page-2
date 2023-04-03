@@ -1,0 +1,76 @@
+
+.welcome_main_body{
+  padding: 70px 100px ;
+
+}
+.welcome_body{
+    width: 80%;
+}
+.welcome_text{
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+
+}
+.welcome_Para{
+    color: gainsboro;
+    font-size: 22px;
+}
+.main_youtube_video{
+    height: 80vh;
+}
+.train_btn{
+    cursor: pointer;
+    color: rgb(252, 248, 248);
+    border: 2px solid #878686d6;
+    border-radius: 8px;
+    padding: 8px 10px !important;
+    cursor: pointer;
+    background-color: black;
+}
+.input_btn_video{
+    background-color: purple !important;
+    color: white !important;
+    border-color: black !important;
+    padding: 8px 10px !important;
+
+    
+}
+.input_email_video{
+    border-color: black !important;
+
+}
+.video_head{
+    color: gainsboro;
+}
+.video_content{
+    font-size: 30px;
+    color: gainsboro;
+}
+.video_content span{
+    color: #56af56;
+}
+@media only screen and (max-width:1120px){
+    .welcome_main_body {
+        padding: 60px 30px;
+    }
+    
+}
+@media only screen and (max-width:600px){
+    .welcome_body{
+        width: 100%;
+    }
+    .welcome_text{
+        font-size: 30px;
+    
+    }
+    .welcome_Para{
+        font-size: 18px;
+    }
+    .main_youtube_video{
+        height: 40vh;
+    }
+    .video_content{
+        font-size: 22px;
+    }
+}

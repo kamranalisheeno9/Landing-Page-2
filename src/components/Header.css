@@ -1,0 +1,33 @@
+.header_div{
+    padding: 20px;
+}
+.tab_links a{
+    text-decoration: none;
+    cursor: pointer;
+    color: gainsboro;
+}
+.tab_links a:hover{
+    color: rgb(200, 200, 200);
+
+}
+.search_input{
+    background-color: #504f4fd6 !important;
+    border-color: #878686d6 !important;
+    color: white !important;
+}
+.sign_in{
+    color: gainsboro;
+    cursor: pointer;
+}
+.sign_up{
+    color: gainsboro;
+    border: 2px solid #878686d6;
+    border-radius: 8px;
+    padding: 0px !important;
+    padding: 5px 8px !important;
+    cursor: pointer;
+}
+.sign_in:hover, .sign_up:hover{
+    color: rgb(200, 200, 200);
+
+}

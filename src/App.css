@@ -1,0 +1,13 @@
+
+.header_body{
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background: url('https://images.unsplash.com/photo-1634176866089-b633f4aec882?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&w=1000&q=80');
+}
+.footer{
+  background-color: rgb(18, 17, 17);
+}
+.sign{
+  padding: 0px !important;
+  margin-bottom: 120px;
+}

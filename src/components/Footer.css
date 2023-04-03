@@ -1,0 +1,65 @@
+.newsletter{
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+.newsletter_text{
+    color: gainsboro;
+    font-size: 15px;
+    margin-bottom: 20px;
+
+}
+.subscribe_btn{
+    padding: 10px 15px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.footer_list_ul{
+    padding: 0px !important;    
+
+}
+.footer_links{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+.footer_links a{
+    color: gainsboro;
+    text-decoration: none;
+
+ 
+
+}
+.footer_links a:hover{
+    color: rgb(189, 187, 187);
+}
+.footer_list_2{
+    list-style: none;
+    display: flex;
+    
+}
+.footer_list_2 li{
+    padding: 10px;
+    padding-bottom: 0px;
+    color: rgb(209, 209, 209);
+}
+.footer_list_2 li a{
+    color: white;
+    font-size: 22px;
+}
+.footer_bar_2{
+    background-color: #151C26;
+    padding: 0px 20px ;
+
+}
+.footer_body{
+    background-color: rgb(18, 17, 17);
+    padding: 50px ;
+    padding-bottom: 0px;
+  
+  }
