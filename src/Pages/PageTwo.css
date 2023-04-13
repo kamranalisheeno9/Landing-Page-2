@@ -135,7 +135,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #77a096;
   transition: 0.4s;
   border-radius: 50px;
 }
@@ -152,7 +152,7 @@
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #025a4e;
 }
 input:checked + .slider::before {
   transform: translateX(26px);
@@ -243,6 +243,7 @@ input:checked + .slider::before {
   .composite_layer_img {
     height: auto;
     width: 100%;
+    margin-top: 18px;
   }
   .tracker_main_text {
     font-size: 38px;
