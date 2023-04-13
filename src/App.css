@@ -1,13 +1,27 @@
-
-.header_body{
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background: url('https://images.unsplash.com/photo-1634176866089-b633f4aec882?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&w=1000&q=80');
+@import url("https://fonts.googleapis.com/css2?family=Lemon&family=Poppins&display=swap");
+.App {
+  background: url("./assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
-.footer{
-  background-color: rgb(18, 17, 17);
+/* Responsive Layout */
+@media only screen and (max-width: 1320px) {
+  .App {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
 }
-.sign{
-  padding: 0px !important;
-  margin-bottom: 120px;
+@media only screen and (max-width: 470px) {
+  .App {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+  }
 }

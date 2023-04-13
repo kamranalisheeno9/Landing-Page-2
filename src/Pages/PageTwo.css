@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemon&family=Poppins&display=swap");
+.App_2 {
+  background: url("../assets/bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.tracker_page_main_text_box {
+  text-align: center;
+}
+.tracker_main_text {
+  font-family: "lemon";
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 120px;
+  font-style: normal;
+  text-align: center;
+  color: #527c7b;
+}
+.tracker_para_text {
+  font-family: "poppins";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 60px;
+  font-style: normal;
+  text-align: center;
+  color: #527c7b;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.composite_layer_img {
+  height: 85vh;
+  padding: 20px;
+  margin: 0 auto;
+}
+.composite_layer_box {
+  text-align: center;
+}
+.extra_text_box {
+  margin: 100px 50px;
+}
+.extra_text_header {
+  font-family: "lemon";
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  color: #527c7b;
+  margin-bottom: 20px;
+}
+.extra_text_para {
+  font-family: "poppins";
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: #527c7b;
+}
+.radio_btn {
+  text-align: center;
+}
+.radio_btn span {
+  font-family: "poppins";
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #527c7b;
+}
+.radio_btn button {
+  margin: 0px 20px;
+}
+.old_new_box {
+  margin: 0 auto;
+  margin-top: 120px;
+  margin-bottom: 220px;
+  height: 600px;
+  border-radius: 120px;
+  background: #cdebe0;
+  text-align: center;
+  width: 90%;
+}
+
+.old_img {
+  opacity: 1 !important;
+  height: 100%;
+  transform: scale(1.25);
+}
+.prototype_box {
+  margin-bottom: 100px;
+}
+.prototype_box img {
+  width: 100%;
+  padding: 10px;
+}
+.spotify_btn {
+  margin: 0 auto;
+  width: 350px;
+  height: 140px;
+  margin-top: 70px;
+  opacity: 0.42;
+  border-radius: 142px;
+  background: #e3fffe;
+  font-family: "lemon";
+  font-size: 42px;
+  font-weight: 400;
+  font-style: normal;
+  color: #689191;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 0px 20px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.slider::before {
+  position: absolute;
+  content: " ";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 1320px) {
+  .App_2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .composite_layer_img {
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .tracker_main_text {
+    font-size: 90px;
+  }
+  .tracker_para_text {
+    font-size: 25px;
+    line-height: normal;
+  }
+  .extra_text_header {
+    font-size: 42px;
+  }
+  .extra_text_para {
+    font-size: 21px;
+  }
+}
+@media only screen and (max-width: 982px) {
+  .composite_layer_img {
+    height: 50vh;
+  }
+  .tracker_main_text {
+    font-size: 70px;
+  }
+  .tracker_para_text {
+    font-size: 21px;
+  }
+  .spotify_btn {
+    width: 300px;
+    height: 100px;
+    margin-top: 50px;
+    font-size: 35px;
+  }
+  .old_new_box {
+    height: 460px;
+  }
+  .radio_btn span {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .composite_layer_img {
+    height: 40vh;
+  }
+  .tracker_main_text {
+    font-size: 50px;
+  }
+  .tracker_para_text {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  .extra_text_header {
+    font-size: 35px;
+  }
+  .extra_text_para {
+    font-size: 17px;
+  }
+  .spotify_btn {
+    width: 250px;
+    height: 86px;
+    margin-top: 50px;
+    font-size: 30px;
+  }
+  .old_new_box {
+    border-radius: 60px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 572px) {
+  .composite_layer_img {
+    height: auto;
+    width: 100%;
+  }
+  .tracker_main_text {
+    font-size: 38px;
+    line-height: 80px;
+  }
+  .tracker_para_text {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 32px;
+  }
+  .extra_text_header {
+    font-size: 32px;
+  }
+  .extra_text_para {
+    font-size: 18px;
+  }
+
+  .radio_btn span {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .App_2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+  }
+}
