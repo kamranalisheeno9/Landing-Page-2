@@ -100,7 +100,7 @@ const PageTwo = () => {
         </span>
       </div>
       <div className="old_new_box">
-        <img className="old_img" src={show ? NewImg : OldImg} alt="Old Image" />
+        <img   className={` ${show ? "old_img new" : "old_img "}`} src={show ? NewImg : OldImg} alt="Old Image" />
       </div>
       <div className="extra_text_box">
         <div className="extra_text_header">Design Overhall</div>

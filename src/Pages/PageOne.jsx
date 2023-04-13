@@ -24,14 +24,14 @@ const PageOne = () => {
       <div className="clouds">
         <img src={CloudsImg} alt="Clouds" />
       </div>
-      <div className="p_1_main_text">Hi. I’m Zack.</div>
-      <div className="p_1_main_text">A Designer.</div>
+      <div className="p_1_main_text  ">Hi. I’m Zack.</div>
+      <div className="p_1_main_text  ">A Designer.</div>
       <div className="p_1_paragraph_text">
         Creating visually stunning and memorable UI/UX interfaces that leave a
         lasting impression, while also solving real-world problems
       </div>
       <div className="mood_tracker">
-        <Link to="page2">
+        <Link className="page_2" to="page2">
           <Row className="mood_row justify-content-between">
             <Col md={6} className="mood_mob_col">
               <img className="mood_mob_img" src={MoodMobileImg} alt="Mobile" />

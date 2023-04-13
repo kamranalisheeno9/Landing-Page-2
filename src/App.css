@@ -9,6 +9,13 @@
   padding-bottom: 100px;
   padding-left: 80px;
   padding-right: 80px;
+  background-position: top left;
+  animation: bgMove 10s infinite;
+}
+@keyframes bgMove {
+  25% {background-position: bottom right;}
+  50% {background-position: center;}
+  70% {background-position: top right;}
 }
 /* Responsive Layout */
 @media only screen and (max-width: 1320px) {
