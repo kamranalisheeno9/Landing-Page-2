@@ -207,7 +207,8 @@ input:checked + .slider::before {
 }
 @media only screen and (max-width: 982px) {
   .composite_layer_img {
-    height: 50vh;
+    height: 45vh;
+    margin: 10px 0px;
   }
   .tracker_main_text {
     font-size: 70px;
@@ -255,6 +256,9 @@ input:checked + .slider::before {
     border-radius: 60px;
     width: 100%;
   }
+  .extra_text_box {
+    margin: 65px 22px;
+}
 }
 @media only screen and (max-width: 572px) {
   .composite_layer_img {

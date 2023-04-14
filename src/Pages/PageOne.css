@@ -6,7 +6,7 @@
   font-style: normal;
   text-align: center;
   color: #527c7b;
-  animation: textMove 2s  ;
+  animation: textMove 1s  ;
 
 
 }
@@ -26,40 +26,39 @@
   top: 70px;
   right: 40px;
   height: 10vh;
-  animation: textMove 3s  ;
+  animation: cloudsMove 1s  ;
 
 }
 .clouds img {
   width: 100%;
 }
-.mood_tracker {
+.traker_page{
   background-color: #e0fff2;
   border-radius: 100px;
   margin-top: 100px;
   margin-bottom: 100px;
-  height: 85vh;
   overflow: hidden;
 
 }
 .mood_mob_img {
   position: relative;
-  top: 80px;
-  left: 150px;
+  top:40px;
+  margin-left: 150px;
   width: 400px;
   transition: 0.4s ease-in-out;
+  margin-top: 0px;
 }
-.mood_tracker:hover .mood_mob_img {
-  top: 100px;
+.traker_page:hover .mood_mob_img {
+  top: 60px;
   transition: 0.4s ease-in-out;
 }
-.mood_tracker:hover {
+.traker_page:hover {
   box-shadow: 0px 15px 20px rgba(62, 62, 62, 0.17);
   transition: 0.2s ease-in-out;
   background-color: #d9fced;
 }
 .mood_text {
   margin-top: 50px;
-  float: right;
   margin-right: 40px;
   opacity: 0.64;
   font-family: "lemon";
@@ -67,9 +66,10 @@
   font-weight: 400;
   line-height: 60px;
   font-style: normal;
-  text-align: left;
+  text-align: right;
   color: #527c7b;
 }
+
 .page_2{
   text-decoration: none !important;
 
@@ -80,19 +80,19 @@
   font-size: 31px;
   font-weight: 400;
   font-style: normal;
-  float: right;
+  text-align: right;
   margin-right: 35px;
   color: #527c7b;
 }
-.spotify {
-  height: 85vh;
+.spotify_container{
   border-radius: 100px;
   background: #d8ffe8;
   overflow: hidden;
-  margin: 20px 20px;
+  margin: 20px 0px;
   text-align: center;
   transition: 0.4s ease-in-out;
 }
+
 
 .spotify_text {
   margin-top: 35px;
@@ -122,24 +122,24 @@
   position: relative;
   top: 20px;
   transition: 0.4s ease-in-out;
+  padding-bottom: 70px;
 }
 
-.spotify:hover {
+.spotify_container:hover {
   box-shadow: 0px 15px 20px rgba(62, 62, 62, 0.17);
   transition: 0.2s ease-in-out;
   background: #d8ffe8;
 }
-.spotify:hover .spotify_img {
+.spotify_container:hover .spotify_img {
   top: 40px;
   transition: 0.4s ease-in-out;
 }
 
-.finance {
-  height: 85vh;
+.finance_container {
   border-radius: 100px;
   background: #eff7d5;
   overflow: hidden;
-  margin: 20px;
+  margin: 20px 0px;
   text-align: center;
   transition: 0.4s ease-in-out;
 }
@@ -168,20 +168,20 @@
 }
 
 .finance_img {
-  width: 80%;
+  width: 350px;
   position: relative;
-  top: 130px;
+  top: 100px;
   transition: 0.4s ease-in-out;
 }
 
-.finance:hover {
+.finance_container:hover .finance_img {
+  top: 120px;
+  transition: 0.4s ease-in-out;
+}
+.finance_container:hover {
   box-shadow: 0px 15px 20px rgba(62, 62, 62, 0.17);
   transition: 0.2s ease-in-out;
   background: #eff7d5;
-}
-.finance:hover .finance_img {
-  top: 150px;
-  transition: 0.4s ease-in-out;
 }
 
 .layer_img_1 {
@@ -193,6 +193,10 @@
   margin-top: 30px;
   width: 340px;
   height: 110px;
+}
+.finance_container,.spotify_container{
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .copyright {
   font-family: "poppins";
@@ -211,10 +215,31 @@
 @keyframes textMove {
   0%{
     opacity: 0;
-
+    position: relative;
+    top: 20px;
+    
   }
   100%{
     opacity: 1;
+    position: relative;
+    top: 0px;
+
+  }
+  }
+@keyframes cloudsMove {
+  0%{
+    opacity: 0;
+    position: relative;
+    top: 70px;
+    left: -200px;
+    
+  }
+  100%{
+    opacity: 1;
+    position: relative;
+    top: 70px;
+    left: -40px;
+  
 
   }
   }
@@ -226,44 +251,21 @@
     display: none;
   }
 }
-@media only screen and (max-width: 1080px) {
-  .mood_tracker {
-    height: 75vh;
-    border-radius: 50px;
-  }
-  .spotify {
-    height: 60vh;
-    border-radius: 50px;
-  }
-  .finance {
-    height: 60vh;
-    border-radius: 50px;
-  }
-  .mood_mob_img {
-    top: 150px;
-    left: 50px;
-    width: 292px;
-  }
-  .mood_tracker:hover .mood_mob_img {
-    top: 170px;
-  }
 
-  .finance_img {
-    top: 10px;
-  }
-  .finance:hover .finance_img {
-    top: 30px;
-    transition: 0.4s ease-in-out;
-  }
-  .spotify_img {
-    width: 80%;
-    top: 5px;
-  }
-  .spotify:hover .spotify_img {
-    top: 30px;
+@media only screen and (max-width: 1190px) {
+  .mood_mob_img {
+    margin-left: 80px;
   }
 }
 @media only screen and (max-width: 978px) {
+  .mood_mob_img {
+    margin-left: 70px;
+    width: 320px;
+  }
+  .layer_img_1,.layer_img_2 {
+    width: 270px;
+    height: 84px;
+}
   .p_1_main_text {
     font-size: 90px;
   }
@@ -274,23 +276,6 @@
   .mood_text_para {
     margin-top: 0px;
     font-size: 25px;
-  }
-  .layer_img_1 {
-    margin-top: 100px;
-    width: 250px;
-    height: 80px;
-  }
-  .layer_img_2 {
-    width: 250px;
-    height: 80px;
-  }
-  .spotify {
-    margin: 20px 0px;
-  }
-  .tab {
-    width: 135px;
-    height: 52px;
-    font-size: 20px;
   }
 
   .spotify_text {
@@ -308,32 +293,27 @@
     margin-top: 0px;
   }
 }
-@media only screen and (max-width: 940px) {
-  .finance {
-    height: 55vh;
-  }
-  .spotify {
-    height: 55vh;
-  }
+
+@media only screen and (max-width: 769px) {
+  .copyright {
+    font-size: 25px;
+    line-height: 10px;
+    margin-top: 70px;
 }
-@media only screen and (max-width: 870px) {
-  .finance {
-    height: 52vh;
-  }
-  .spotify {
-    height: 52vh;
-  }
+  
+  .layer_img_1,.layer_img_2 {
+    display: none;
 }
-@media only screen and (max-width: 778px) {
-  .finance {
-    height: 70vh;
-  }
-  .spotify {
-    height: 70vh;
-  }
-  .finance_img {
-    width: 65%;
-  }
+.mood_mob_img {
+  top: 60px;
+}
+.finance_img {
+  width: 300px;
+}
+
+.traker_page:hover .mood_mob_img {
+  top: 80px;
+}
   .p_1_main_text {
     font-size: 50px;
   }
@@ -346,67 +326,50 @@
     line-height: 40px;
     margin-top: 26px;
   }
-  .mood_tracker {
-    margin-top: 32px;
-    margin-bottom: 40px;
-  }
-  .spotify {
-    margin: 50px 0px;
-  }
-  .mood_row {
-    flex-direction: column-reverse !important;
-  }
-  .layer_img_1,
-  .layer_img_2 {
-    display: none;
-  }
   .mood_text {
     text-align: right;
     float: initial;
   }
-  .mood_mob_col {
-    text-align: center;
+  .spotify_container {
+    border-radius: 50px;
+    margin: 20px 0px;
+}
+.finance_img {
+  top: 30px;
+}
+
+.finance_container:hover .finance_img {
+  top: 50px;
+}
+.finance_container{
+    border-radius: 50px;
+
+  }
+
+}
+@media only screen and (max-width: 550px) {
+  .traker_page{
+    border-radius: 50px;
   }
   .mood_mob_img {
-    top: 20px;
-    left: 0;
-    width: 292px;
+    margin-left: 0px;
+    width: 222px;
   }
-  .mood_tracker:hover .mood_mob_img {
-    top: 40px;
+  .mood_img_col{
+    text-align: center;
   }
-}
-@media only screen and (max-width: 668px) {
-  .finance {
-    height: 60vh;
-  }
-  .spotify {
-    height: 60vh;
+  
+  .finance_img {
+    width: 250px;
   }
   .copyright {
-    font-size: 20px;
-
-    margin-top: 40px;
-  }
+    font-size: 18px;
+    line-height: 10px;
+    margin-top: 70px;
 }
-@media only screen and (max-width: 562px) {
-  .finance {
-    height: 52vh;
-  }
-  .spotify {
-    height: 52vh;
-  }
-  .finance {
-    margin: 5px;
-  }
+  
 }
-@media only screen and (max-width: 470px) {
-  .finance {
-    height: 45vh;
-  }
-  .spotify {
-    height: 50vh;
-  }
+  @media only screen and (max-width: 470px) {
   .spotify_text {
     font-size: 28px;
   }
@@ -425,11 +388,5 @@
   .mood_text_para {
     font-size: 20px;
   }
-  .mood_mob_img {
-    top: 100px;
-    width: 240px;
-  }
-  .mood_tracker:hover .mood_mob_img {
-    top: 120px;
-  }
+
 }
